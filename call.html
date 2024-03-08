@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/whats.css">
+</head>
+<body id="chat-page">
+  <header id="header">
+    <a href="./index.html"><button><i class="fa-solid fa-arrow-left l"></i><img src="./img/Avatar-Profile-Vector-PNG-Cutout.png" alt=""></button></a>
+    <h2>sayed</h2>
+    <ul>
+      <li onclick="openMenu2()"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+      <li><i class="fa-solid fa-phone"></i></li>
+      <li><i class="fa-solid fa-video"></i></li>
+    </ul>
+
+    <div id="mFather" onclick="closeMenu2_3()"></div>
+    <div id="menu2">
+      <ul>
+        <li>View contact</li>
+        <li>Media, links, and docs</li>
+        <li>Search</li>
+        <li>Mute notifications</li>
+        <li>Disappearing messages</li>
+        <li>Wallpaper</li>
+        <li onclick="openMenu3()">more <i class="fa-solid fa-caret-right caret"></i></li>
+      </ul>
+    </div>
+    <div id="menu3">
+      <ul>
+        <li>Report</li>
+        <li>Block</li>
+        <li>Clear chat</li>
+        <li>Export chat</li>
+        <li>Add shortcut</li>
+      </ul>
+    </div>
+  </header>
+  <section id="schatP">
+    <span>Today</span>
+    <br>
+    <p>Hi 🙋‍♂️<span id="span">1:08 pm</span></p>
+  </section>
+  <footer id="footer-chat">
+    <div>
+      <button><i class="fa-solid fa-face-laugh"></i></button>
+      <form action="post">
+        <input type="text" placeholder="Message">
+      </form>
+      <button onclick="openShare()"><i class="fa-solid fa-paperclip fa-rotate-270"></i></button>
+      <button><i class="fa-solid fa-camera"></i></button>
+    </div>
+    <button id="record"><i class="fa-solid fa-microphone"></i></button>
+  </footer>
+  
+  <div id="sFather" onclick="closeShare()"></div>
+  <div id="share">
+    <div>
+      <button><i class="fa-solid fa-file"></i></button>
+      <p>Document</p>
+    </div>
+    <div>
+      <button><i class="fa-solid fa-camera"></i></button>
+      <P>Camera</P>
+    </div>
+    <div>
+      <button><i class="fa-solid fa-image fa-flip-horizontal"></i></button>
+      <p>Gallery</p>
+    </div>
+    <div>
+      <button><i class="fa-solid fa-headphones"></i></button>
+      <p>Audio</p>
+    </div>
+    <div>
+      <button><i class="fa-solid fa-location-dot"></i></button>
+      <p>Location</p>
+    </div>
+    <div>
+      <button><i class="fa-solid fa-user"></i></button>
+      <p>Contact</p>
+    </div>
+    <div>
+      <button><i class="fa-solid fa-chart-simple"></i></button>
+      <p>Poll</p>
+    </div>
+  </div>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/whats.js"></script>
+</body>
+</html>

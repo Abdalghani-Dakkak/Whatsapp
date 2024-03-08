@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/whats.css">
+</head>
+<body>
+  <header>
+    <div id="whead">
+      <h1>WhatsApp</h1>
+      <button onclick="openMenu()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+      <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button><i class="fa-solid fa-camera"></i></button>
+    </div>
+    <div id="links">
+      <a href="./comunities.html" class="active"><i class="fa-solid fa-users"></i></a>
+      <a href="./index.html">Chats</a>
+      <a href="./status.html">Status</a>
+      <a href="./calls.html">Calls</a>
+    </div>
+
+    <div id="mFather" onclick="closeMenu()"></div>
+    <div id="menu">
+      <ul>
+        <li>New group</li>
+        <li>New broadcast</li>
+        <li>Linked devices</li>
+        <li>Starred messages</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+
+    <div id="search">
+      <button onclick="closeSearch()"><i class="fa-solid fa-arrow-left"></i></button>
+      <form action="">
+        <input id="inputS" type="search" placeholder="Search..." focus>
+      </form>
+      <ul>
+        <li>
+          <button><i class="fa-solid fa-comment"></i> Unread</button>
+          <button><i class="fa-solid fa-comment"></i> Photos</button>
+          <button><i class="fa-solid fa-video"></i> Videos</button>
+        </li>
+        <li>
+          <button><i class="fa-solid fa-link"></i> Links</button>
+          <button><i class="fa-solid fa-photo-film"></i> GIFs</button>
+          <button><i class="fa-solid fa-headphones"></i> Audio</button>
+        </li>
+        <li>
+          <button><i class="fa-solid fa-file-lines"></i> Documents</button>
+          <button><i class="fa-solid fa-chart-simple"></i> Polls</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section id="scomm">
+    <img src="./img/communities.png" alt="">
+    <h2>Introducing communities</h2>
+    <p>Easily organiseyour related groups and send announcements. Now your communities, like neighbourhoods or schools, can have their own space.</p>
+    <br>
+    <button>Start your community</button>
+  </section>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/whats.js"></script>
+</body>
+</html>

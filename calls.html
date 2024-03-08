@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/whats.css">
+</head>
+<body id="s-c">
+  <header>
+    <div id="whead">
+      <h1>WhatsApp</h1>
+      <button onclick="openMenu()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+      <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button><i class="fa-solid fa-camera"></i></button>
+    </div>
+    <div id="links">
+      <a href="./comunities.html"><i class="fa-solid fa-users"></i></a>
+      <a href="./index.html">Chats</a>
+      <a href="./status.html">Status</a>
+      <a href="./calls.html" class="active">Calls</a>
+    </div>
+
+    <div id="mFather" onclick="closeMenu()"></div>
+    <div id="menu">
+      <ul>
+        <li>New group</li>
+        <li>New broadcast</li>
+        <li>Linked devices</li>
+        <li>Starred messages</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+
+    <div id="search">
+      <button onclick="closeSearch()"><i class="fa-solid fa-arrow-left"></i></button>
+      <form action="">
+        <input id="inputS" type="search" placeholder="Search..." focus>
+      </form>
+      <ul>
+        <li>
+          <button><i class="fa-solid fa-comment"></i> Unread</button>
+          <button><i class="fa-solid fa-comment"></i> Photos</button>
+          <button><i class="fa-solid fa-video"></i> Videos</button>
+        </li>
+        <li>
+          <button><i class="fa-solid fa-link"></i> Links</button>
+          <button><i class="fa-solid fa-photo-film"></i> GIFs</button>
+          <button><i class="fa-solid fa-headphones"></i> Audio</button>
+        </li>
+        <li>
+          <button><i class="fa-solid fa-file-lines"></i> Documents</button>
+          <button><i class="fa-solid fa-chart-simple"></i> Polls</button>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section id="schat">
+    <section id="sstatus">
+      <div id="my">
+        <button id="call-link"><i class="fa-solid fa-link"></i></button>
+        <h2>Create call link</h2>
+        <p>Share a link for your WhatsApp call</p>
+      </div>
+      <h3>Recent</h3>
+      <div id="they2">
+        <img src="./img/Avatar-Profile-Vector-PNG-Cutout.png" alt="">
+        <h2>Sayed</h2>
+        <p><i class="fa-solid fa-arrow-down c1"></i> (2) 23 April, 8:13 pm</p>
+        <i class="fa-solid fa-phone i"></i>
+      </div>
+      <div id="they2">
+        <img src="./img/Avatar-Profile-Vector-PNG-Cutout.png" alt="">
+        <h2>Sayed</h2>
+        <p><i class="fa-solid fa-arrow-down c2"></i> (2) 23 April, 8:13 pm</p>
+        <i class="fa-solid fa-video i"></i>
+      </div>
+      <div id="they2">
+        <img src="./img/Avatar-Profile-Vector-PNG-Cutout.png" alt="">
+        <h2>Sayed</h2>
+        <p><i class="fa-solid fa-arrow-down c2"></i> (2) 23 April, 8:13 pm</p>
+        <i class="fa-solid fa-phone i"></i>
+      </div>
+      <div id="they2">
+        <img src="./img/Avatar-Profile-Vector-PNG-Cutout.png" alt="">
+        <h2>Sayed</h2>
+        <p><i class="fa-solid fa-arrow-down c2"></i> (2) 23 April, 8:13 pm</p>
+        <i class="fa-solid fa-phone i"></i>
+      </div>
+      <div id="they2">
+        <img src="./img/Avatar-Profile-Vector-PNG-Cutout.png" alt="">
+        <h2>Sayed</h2>
+        <p><i class="fa-solid fa-arrow-down c1"></i> (2) 23 April, 8:13 pm</p>
+        <i class="fa-solid fa-video i"></i>
+      </div>
+      <div id="they2">
+        <img src="./img/Avatar-Profile-Vector-PNG-Cutout.png" alt="">
+        <h2>Sayed</h2>
+        <p><i class="fa-solid fa-arrow-down c2"></i> (2) 23 April, 8:13 pm</p>
+        <i class="fa-solid fa-phone i"></i>
+      </div>
+      <div id="they2">
+        <img src="./img/Avatar-Profile-Vector-PNG-Cutout.png" alt="">
+        <h2>Sayed</h2>
+        <p><i class="fa-solid fa-arrow-down c1"></i> (2) 23 April, 8:13 pm</p>
+        <i class="fa-solid fa-video i"></i>
+      </div>
+      <button id="chat"><i class="fa-solid fa-phone big"></i><i class="fa-solid fa-plus small"></i></button>
+    </section>
+    <br>
+  </section>
+  <footer>
+    <hr>
+    <p><i class="fa-solid fa-lock"></i> Your personal messages are <span onclick="openETE()">end-to-end encrypted</span></p>
+    <div id="pe">
+      <div id="end-to-end">
+        <button id="x" onclick="closeETE()"><i class="fa-solid fa-xmark"></i></button>
+        <img src="./img/end-to-end.png" alt="">
+        <h2>Your chats and calls are private</h2>
+        <p>
+          End-to-end encryption keeps your personal messages and calls between you and the people you choose. Not even WhatsApp can read or listen to them. This includes your:
+        </p>
+        <ul>
+          <li>
+            <p>
+              <i class="fa-solid fa-message a"></i>
+              Text and voice messages
+            </p>
+          </li>
+          <li>
+            <p>
+              <i class="fa-solid fa-phone a"></i>
+              Audio and vidoe calls
+            </p>
+          </li>
+          <li>
+            <p>
+              <i class="fa-solid fa-paperclip fa-rotate-270 a"></i>
+              Photos, vidoes and documents
+            </p>
+          </li>
+          <li>
+            <p>
+              <i class="fa-solid fa-location-dot a"></i>
+              Location sharing
+            </p>
+          </li>
+          <li>
+            <p>
+              <i class="fa-solid fa-circle-notch a"></i>
+              Status updates
+            </p>
+          </li>
+        </ul>
+        <br>
+        <button id="learn-more">Learn more</button>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/whats.js"></script>
+</body>
+</html>
